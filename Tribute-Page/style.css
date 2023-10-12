@@ -3,36 +3,36 @@
 }
 
 body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-image: url("media/images/steam_games_bg.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 #git_icon {
     position: fixed;
     top: 10px;
     right: 10px;
-    color: #E6EDF3;
     transition: 0.1s;
+    color: #E6EDF3;
 }
+
 #git_icon:hover {
     text-shadow: 0px 0px 30px #E6EDF3;
 }
 
 #content_box {
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
+
 #content_box a {
     color: white;
     transition: 0.1s;
@@ -49,33 +49,30 @@ body {
     border-right-color: #66C0F4;
     border-bottom-color: #2A475E;
     border-left-color: #2A475E;
-
     box-shadow: 10px 10px #171A21;
-
     z-index: 1;
 }
 
 #description {
-    width: 700px;
-
+    max-width: 700px;
     padding-bottom: 10px;
-
     background-color: #155d86;
     box-shadow: 10px 10px #171A21;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-
     transform: translateY(-10px);
 }
+
 #description h1 {
     margin: 0px;
     margin-top: 20px;
 }
+
 #description h3 {
     padding-left: 10px;
     text-decoration: underline;
 }
+
 #description p {
     margin: 5px;
     margin-left: 15px;
