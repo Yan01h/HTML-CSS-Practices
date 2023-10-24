@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 20%, rgba(40, 40, 40, 0.6) 60%,
+    rgba(10, 10, 10, 0.9)), url("media/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.title-container h1 {
+    animation-name: intro;
+    animation-duration: 1s;
+}
+
+.parallax-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.parallax-description h1 {
+    margin-bottom: 0.5em;
+}
+
+.parallax-description a {
+    color: black;
+}
+
+.parallax-1 {
+    background-image: url("media/images/wonders/great_wall_of_china.jpg");
+}
+
+.parallax-2 {
+    background-image: url("media/images/wonders/petra.jpg");
+}
+
+.parallax-3 {
+    background-image: url("media/images/wonders/colosseum.jpg");
+}
+
+.parallax-4 {
+    background-image: url("media/images/wonders/chichen_itza.jpg");
+}
+
+.parallax-5 {
+    background-image: url("media/images/wonders/machu_picchu.jpg");
+}
+
+.parallax-6 {
+    background-image: url("media/images/wonders/taj_mahal.jpg");
+}
+
+.parallax-7 {
+    background-image: url("media/images/wonders/christ_the_redeemer.jpg");
+}
+
+.ending-box {
+    background-color: gray;
+    height: auto;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ending-box a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+#git_icon {
+    transition: 0.1s;
+}
+
+#git_icon:hover {
+    text-shadow: 0px 0px 30px #E6EDF3;
+}
+
+@keyframes intro {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title-container {
+        font-size: 3rem;
+    }
+
+    .parallax-description {
+        font-size: 1.3rem;
+    }
+}
